@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<img src="`dice/dice${firstNum}.jpg`" alt="" id="firstDice">
+<img src="`dice/dice${secondNum}.jpg`" alt="" id="secondDice">
+<script>
+  let firstDice = document.getElementById("firstDice");
+  let secondDice = document.getElementById("secondDice");
+  firstDice.setAttribute("src", "dice/dice" + Math.floor(Math.random()*6+1) + ".jpg");
+  secondDice.setAttribute("src", "dice/dice" + Math.floor(Math.random()*6+1) + ".jpg");
+</script>
+</body>
+</html>
